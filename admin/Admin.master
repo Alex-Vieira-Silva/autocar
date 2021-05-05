@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link href="../css/Site.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="topo">
+        
+            <span class="style1"><strong>Seja bem vindo: </strong></span><strong>
+            <asp:LoginName ID="LoginName1" runat="server" CssClass="style1" />
+            </strong>
+        
+        </div>
+
+        <div id="menu">
+                <ul>
+                    <li><a href="Carros.aspx">Carros</a></li>
+                    <li><a href="pecas.aspx">Peças</a></li>
+                    <li><a href="Taxa.aspx">Financiamento</a></li>
+                    <li><a href="Default.aspx">Páginas</a></li>
+                    <li><a href="Sair.aspx">Sair</a></li>
+                </ul>
+        </div>
+        <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="rodape">Site desenvolvido por RL System - 2013 - With C#, ASP.NET 4.0 and 
+            VS 2010</div>
+    </div>
+    </form>
+</body>
+</html>
+

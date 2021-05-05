@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main">
+        <div id="topo">
+        
+        </div>
+
+        <div id="menu">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <li><a href="ViewPage.aspx?ID=1">A Empresa</a></li>
+                    <li><a href="ViewPage.aspx?ID=2">Financiamento</a></li>
+                    <li><a href="Default.aspx">Carros</a></li>
+                    <li><a href="Pecas.aspx">Peças</a></li>
+                    <li><a href="ViewPage.aspx?ID=3">Contato</a></li>
+                </ul>
+        </div>
+        <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="rodape">Site desenvolvido por RL System - 2013 - With C#, ASP.NET 4.0 and 
+            VS 2010</div>
+    </div>
+    </form>
+</body>
+</html>
